@@ -1,0 +1,23 @@
+#Excess pore size width [0-0.866]
+eps: 0.8
+
+#SW corona size [1.0-sqrt(1-eps*eps)]
+r0: 1.0
+
+#Quantity to compute (1:Equation of state, 2:Radial distribution function, 3:Density profile, 4:Zeno and Seno line, 5:Structure factor)
+quantity: 1
+
+#Set pressure or density (setting density>0 will overwrite pressure value) Not valid if you want to compute de equation of state
+pressure: 0.0
+density: 1.15
+
+#Set temperature
+temperature: 0.1
+
+#Range in the form min max npoints (1: [pmin, pmax], 2: [xmin, xmax])
+min: 0.01
+max: 50
+npoints: 4000
+
+#Discretization parameter
+nsize: 301
